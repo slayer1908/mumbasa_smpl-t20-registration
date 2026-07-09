@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pitch-950: #05140d;
+  --color-pitch-900: #071d13;
+  --color-pitch-850: #0a2418;
+  --color-pitch-800: #0d2e1e;
+  --color-pitch-700: #123c27;
+  --color-pitch-600: #1a4d33;
+
+  --color-gold-400: #f4d478;
+  --color-gold-500: #e9c25f;
+  --color-gold-600: #d4a72c;
+  --color-gold-700: #a97f1d;
+
+  --color-emerald-glow: #2fbf71;
+
+  --font-display: "Georgia", "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-pitch-950);
+  color: #f3f4f1;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(47, 191, 113, 0.10), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(233, 194, 95, 0.10), transparent 40%);
+  background-attachment: fixed;
+}
+
+.card {
+  background-color: var(--color-pitch-850);
+  border: 1px solid rgba(233, 194, 95, 0.15);
+  border-radius: 1rem;
+}
+
+.gold-gradient-text {
+  background-image: linear-gradient(90deg, #f4d478, #e9c25f, #a97f1d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stitch-divider {
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(233, 194, 95, 0.6) 0,
+    rgba(233, 194, 95, 0.6) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+input,
+select,
+textarea {
+  color-scheme: dark;
+}
+
+::selection {
+  background-color: rgba(233, 194, 95, 0.35);
+}
