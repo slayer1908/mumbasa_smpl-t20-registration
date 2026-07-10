@@ -45,15 +45,17 @@ export default function HomePage() {
 
       {/* Poster / Banner */}
       <section className="mx-auto max-w-5xl px-4 pt-8">
-        <div className="relative overflow-hidden rounded-2xl border border-gold-700/20 shadow-2xl shadow-black/40 flex justify-center bg-pitch-900">
-          <Image
-            src="/poster.png"
-            alt="Summer Mombasa Premier League T20 - Kenya Tour"
-            width={1024}
-            height={1536}
-            className="w-auto h-auto max-h-[520px] sm:max-h-[640px] object-contain"
-            priority
-          />
+        <div className="mx-auto max-w-xs sm:max-w-sm md:max-w-md">
+          <div className="relative overflow-hidden rounded-2xl border border-gold-600/30 shadow-2xl shadow-black/50 ring-1 ring-gold-500/10">
+            <Image
+              src="/poster.png"
+              alt="Summer Mombasa Premier League T20 - Kenya Tour"
+              width={800}
+              height={902}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
         </div>
       </section>
 
