@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import RegistrationForm from "./components/RegistrationForm";
+import ModeBadge from "./components/ModeBadge";
 import {
   UPI_DETAILS,
   BANK_DETAILS,
@@ -11,6 +12,7 @@ import {
 export default function HomePage() {
   return (
     <main className="min-h-screen">
+      <ModeBadge />
       {/* Header */}
       <header className="border-b border-gold-700/15">
         <div className="mx-auto max-w-5xl px-4 py-5 flex items-center justify-between">
@@ -43,13 +45,13 @@ export default function HomePage() {
 
       {/* Poster / Banner */}
       <section className="mx-auto max-w-5xl px-4 pt-8">
-        <div className="relative overflow-hidden rounded-2xl border border-gold-700/20 shadow-2xl shadow-black/40">
+        <div className="relative overflow-hidden rounded-2xl border border-gold-700/20 shadow-2xl shadow-black/40 flex justify-center bg-pitch-900">
           <Image
             src="/poster.png"
             alt="Summer Mombasa Premier League T20 - Kenya Tour"
-            width={1600}
-            height={700}
-            className="w-full h-auto"
+            width={1024}
+            height={1536}
+            className="w-auto h-auto max-h-[520px] sm:max-h-[640px] object-contain"
             priority
           />
         </div>
@@ -101,7 +103,7 @@ export default function HomePage() {
                   src="/qr.png"
                   alt="UPI QR Code for payment"
                   width={220}
-                  height={220}
+                  height={245}
                   className="rounded-lg"
                 />
               </div>
